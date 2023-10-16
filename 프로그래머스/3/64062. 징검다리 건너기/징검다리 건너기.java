@@ -1,5 +1,5 @@
 class Solution {
-    public static int solution(int[] stones, int k) {
+	public static int solution(int[] stones, int k) {
 		int answer=0;
 		int min=1;
 		int max=200000000;
@@ -19,12 +19,10 @@ class Solution {
 	
 	public static boolean cross(int friends, int[] stones, int k) {
 		int count=0;
-
+		
 		for (int stone:stones) {
-        
 			if (friends>stone) count++;
 			else count=0;
-
 			if (count==k) return false;
 		}
 		return true;
